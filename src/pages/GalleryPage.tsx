@@ -16,16 +16,17 @@ export default function GalleryPage() {
   const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null);
   const [selectedCategory, setSelectedCategory] = useState<string>('All');
 
+  const base = import.meta.env.BASE_URL;
   const galleryImages: GalleryImage[] = [
-    { id: 1, url: '/bracelet.jpeg', title: 'Bracelet with Butterfly Charm', category: 'Bracelets', size: 'medium' },
-    { id: 2, url: '/brown hair clip.jpeg', title: 'Brown Hair Clip', category: 'Accessories', size: 'small' },
-    { id: 3, url: '/Pink Flower Hair Accessory.jpeg', title: 'Pink Flower Hair Accessory', category: 'Accessories', size: 'medium' },
-    { id: 4, url: '/Silver Ring.jpeg', title: 'Heart-shaped Pink Gemstone Silver Ring', category: 'Jewelry', size: 'small' },
-    { id: 5, url: '/evil eye bracelet.jpeg', title: 'Gold Chain Bracelet', category: 'Bracelets', size: 'small' },
-    { id: 6, url: '/lip gloss.jpeg', title: 'Pink Lip Gloss', category: 'Accessories', size: 'small' },
-    { id: 8, url: '/Silver Ring.jpeg', title: 'Signature Ring', category: 'Jewelry', size: 'large' },
-    { id: 9, url: '/bracelet.jpeg', title: 'Memorable Gift Set', category: 'Bracelets', size: 'large' },
-    { id: 10, url: '/evil eye bracelet.jpeg', title: 'Protective Evil Eye Bracelet', category: 'Bracelets', size: 'medium' }
+    { id: 1, url: `${base}bracelet.jpeg`, title: 'Bracelet with Butterfly Charm', category: 'Bracelets', size: 'medium' },
+    { id: 2, url: `${base}brown hair clip.jpeg`, title: 'Brown Hair Clip', category: 'Accessories', size: 'small' },
+    { id: 3, url: `${base}Pink Flower Hair Accessory.jpeg`, title: 'Pink Flower Hair Accessory', category: 'Accessories', size: 'medium' },
+    { id: 4, url: `${base}Silver Ring.jpeg`, title: 'Heart-shaped Pink Gemstone Silver Ring', category: 'Jewelry', size: 'small' },
+    { id: 5, url: `${base}evil eye bracelet.jpeg`, title: 'Gold Chain Bracelet', category: 'Bracelets', size: 'small' },
+    { id: 6, url: `${base}lip gloss.jpeg`, title: 'Pink Lip Gloss', category: 'Accessories', size: 'small' },
+    { id: 8, url: `${base}Silver Ring.jpeg`, title: 'Signature Ring', category: 'Jewelry', size: 'large' },
+    { id: 9, url: `${base}bracelet.jpeg`, title: 'Memorable Gift Set', category: 'Bracelets', size: 'large' },
+    { id: 10, url: `${base}evil eye bracelet.jpeg`, title: 'Protective Evil Eye Bracelet', category: 'Bracelets', size: 'medium' }
   ];
 
   const categories = ['All', ...new Set(galleryImages.map(img => img.category))];

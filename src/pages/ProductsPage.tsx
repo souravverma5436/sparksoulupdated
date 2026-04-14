@@ -25,7 +25,7 @@ export default function ProductsPage() {
       category: 'Accessories',
       description:
         'Add a vibrant, effortless touch of summer charm with this bold pink flower hair accessory.',
-      image: '/Pink Flower Hair Accessory.jpeg',
+      image: `${import.meta.env.BASE_URL}Pink Flower Hair Accessory.jpeg`,
       price: '₹499',
       rating: 4.8,
     },
@@ -35,7 +35,7 @@ export default function ProductsPage() {
       category: 'Bracelets',
       description:
         'A wrist is gracefully adorned with two beaded bracelets of clear and lavender crackle crystal, one featuring a purple butterfly charm.',
-      image: '/bracelet.jpeg',
+      image: `${import.meta.env.BASE_URL}bracelet.jpeg`,
       price: '₹799',
       rating: 4.9,
     },
@@ -62,7 +62,7 @@ export default function ProductsPage() {
       name: 'Heart-shaped Pink Gemstone Silver Ring',
       category: 'Jewelry',
       description: 'Delicate silver ring with a heart-shaped pink gemstone and intricate detailing',
-      image: '/Silver Ring.jpeg',
+      image: `${import.meta.env.BASE_URL}Silver Ring.jpeg`,
       price: '₹1,299',
       rating: 5.0,
     },
@@ -71,7 +71,7 @@ export default function ProductsPage() {
       name: 'Gold Chain Bracelet',
       category: 'Bracelets',
       description: 'Elegant gold-plated evil eye chain bracelet with protective charm',
-      image: '/evil eye bracelet.jpeg',
+      image: `${import.meta.env.BASE_URL}evil eye bracelet.jpeg`,
       price: '₹899',
       rating: 4.7,
     },
@@ -81,7 +81,7 @@ export default function ProductsPage() {
       category: 'Accessories',
       description:
         'A miniature lip gloss container shaped like a small pink milkshake, filled with clear gloss and pink glitter.',
-      image: '/lip gloss.jpeg',
+      image: `${import.meta.env.BASE_URL}lip gloss.jpeg`,
       price: '₹349',
       rating: 4.6,
     },
@@ -91,7 +91,7 @@ export default function ProductsPage() {
       category: 'Accessories',
       description:
         'Brown hair clip with a tortoiseshell pattern, featuring a classic claw design for secure hold.',
-      image: '/brown hair clip.jpeg',
+      image: `${import.meta.env.BASE_URL}brown hair clip.jpeg`,
       price: '₹599',
       rating: 4.5,
     },

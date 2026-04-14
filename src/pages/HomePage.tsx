@@ -198,7 +198,7 @@ export default function HomePage({ onNavigate }: HomePageProps) {
               >
                 <div className="relative overflow-hidden rounded-2xl shadow-2xl bg-gradient-to-br from-stone-100 to-amber-50 p-8">
                   <img
-                    src="/ChatGPT Image Apr 13, 2026, 06_05_56 PM 1.png"
+                    src={`${import.meta.env.BASE_URL}ChatGPT Image Apr 13, 2026, 06_05_56 PM 1.png`}
                     alt="Luxury Gift Hamper"
                     className="w-full h-96 object-cover rounded-xl"
                   />
