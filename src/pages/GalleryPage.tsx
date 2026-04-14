@@ -24,9 +24,7 @@ export default function GalleryPage() {
     { id: 4, url: `${base}Silver Ring.jpeg`, title: 'Heart-shaped Pink Gemstone Silver Ring', category: 'Jewelry', size: 'small' },
     { id: 5, url: `${base}evil eye bracelet.jpeg`, title: 'Gold Chain Bracelet', category: 'Bracelets', size: 'small' },
     { id: 6, url: `${base}lip gloss.jpeg`, title: 'Pink Lip Gloss', category: 'Accessories', size: 'small' },
-    { id: 8, url: `${base}Silver Ring.jpeg`, title: 'Signature Ring', category: 'Jewelry', size: 'large' },
-    { id: 9, url: `${base}bracelet.jpeg`, title: 'Memorable Gift Set', category: 'Bracelets', size: 'large' },
-    { id: 10, url: `${base}evil eye bracelet.jpeg`, title: 'Protective Evil Eye Bracelet', category: 'Bracelets', size: 'medium' }
+    { id: 8, url: `${base}Silver Ring.jpeg`, title: 'Signature Ring', category: 'Jewelry', size: 'large' },  
   ];
 
   const categories = ['All', ...new Set(galleryImages.map(img => img.category))];

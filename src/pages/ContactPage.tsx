@@ -25,7 +25,6 @@ export default function ContactPage() {
   const [form, setForm] = useState({
     fullName: '',
     email: '',
-    phone: '',
     whatsapp: '',
     address: '',
     interests: [] as string[],
@@ -55,7 +54,6 @@ export default function ContactPage() {
     const templateParams = {
       from_name:    form.fullName,
       from_email:   form.email,
-      phone:        form.phone,
       whatsapp:     form.whatsapp,
       address:      form.address,
       interests:    form.interests.join(', '),
@@ -69,7 +67,7 @@ export default function ContactPage() {
     try {
       await emailjs.send(EMAILJS_SERVICE_ID, EMAILJS_TEMPLATE_ID, templateParams, EMAILJS_PUBLIC_KEY);
       setStatus('success');
-      setForm({ fullName: '', email: '', phone: '', whatsapp: '', address: '', interests: [], description: '', occasion: '', delivery: '', howFound: '' });
+      setForm({ fullName: '', email: '', whatsapp: '', address: '', interests: [], description: '', occasion: '', delivery: '', howFound: '' });
     } catch {
       setStatus('error');
     }
@@ -201,13 +199,6 @@ export default function ContactPage() {
                   <Field label="Email" required>
                     <input name="email" type="email" value={form.email} onChange={handleChange} required
                       placeholder="your@email.com"
-                      className={inputCls} />
-                  </Field>
-
-                  {/* Contact Number */}
-                  <Field label="Contact Number" required>
-                    <input name="phone" type="tel" value={form.phone} onChange={handleChange} required
-                      placeholder="+91 XXXXX XXXXX"
                       className={inputCls} />
                   </Field>
 
